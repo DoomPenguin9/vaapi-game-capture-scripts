@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DIRPATH="$(pwd)"
+
 # Input if you want to set a custom output directory. If you input n, then the files will be outputted into the directory you are running the script from
 read -p "Do you want to set a directory to write the recorded files to[y/n]:" DIR
 if [[ $DIR = y ]]
