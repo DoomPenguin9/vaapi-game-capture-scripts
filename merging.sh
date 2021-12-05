@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo Merging files...
 
 ffmpeg -i $(sed -n '1p' filenames.txt).mkv -i $(sed -n '2p' filenames.txt).opus -c copy $(sed -n '1p' filenames.txt).mp4
