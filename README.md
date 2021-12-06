@@ -5,6 +5,7 @@ Some simple scripts for recording gameplay with sound on Linux using FFMPEG VAAP
 + libva-mesa-driver
 + tmux
 + ffmpeg
++ You need to give ffmpeg `CAP_SYS_ADMIN` capability to use kmsgrab. To do that, run `sudo setcap cap_sys_admin+ep /usr/bin/ffmpeg`
 
 # Usage
 By default, this is setup for 1440p@60fps capture at a bitrate of 60 000kbps, you can change the bitrate by changing `-b:v 60M` to whatever you want your bitrate to be. I recommend adding the scripts to your `$PATH` so that you can execute them from anywhere. To do this, open your .bashrc(or.zshrc if you are using zsh for your shell) and paste the folioing at the end of the file:
